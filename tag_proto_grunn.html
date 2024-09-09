@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cards de Informação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            padding: 20px;
+        }
+        h1 { color: navy; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid black; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        input, button, select {
+            padding: 10px;
+            margin: 5px;
+        }
+        .card {
+            background-color: #ffd803;
+            color: #000000;
+            border: 2px solid #d8261c;
+            padding: 20px;
+            margin-top: 10px;
+            width: 300px;
+            display: inline-block;
+        }
+        header, footer {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 10px;
+            text-align: center;
+        }
+        .logo {
+            height: 100px; /* Ajuste a altura aqui conforme necessário */
+        }
+        a {
+            color: red;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://grunn.com.br/wp-content/uploads/2020/10/Logotipo-Grunn-do-Brasil-500x500px.png" alt="Grunn do Brasil" class="logo">
+        <nav>
+            <a href="#" style="color: white; margin: 0 10px;">Siko</a>
+            <a href="#" style="color: white; margin: 0 10px;">Kipp</a>
+            <a href="#" style="color: white; margin: 0 10px;">BinMaster</a>
+            <a href="#" style="color: white; margin: 0 10px;">Electro-Sensors</a>
+            <a href="#" style="color: white; margin: 0 10px;">Tandler</a>
+        </nav>
+    </header>
+<h1>Entenda a etiqueta ATEX</h1>
+<p>Quando equipamentos elétricos são usados em locais potencialmente perigosos — que contêm gases, vapores, líquidos, poeira ou fibras inflamáveis — é importante minimizar o potencial de incêndio ou explosão. Uma maneira de fazer isso é usar equipamentos que foram certificados como adequados para esse ambiente e que não são propensos a iniciar um incêndio ou explosão. Na União Europeia, os equipamentos usados em locais perigosos são certificados de acordo com as diretrizes ATEX</p>
+<table>
+    <tr>
+        <th>Componente</th>
+        <th>Descrição</th>
+    </tr>
+    <tr>
+        <td>Diretiva Europeia (Marca CE e Número do Corpo Notificado)</td>
+        <td>Indica conformidade com os requisitos de segurança, saúde e proteção ambiental da UE. Inclui o número único do corpo que avaliou o produto.</td>
+    </tr>
+    <tr>
+        <td>Proteção Contra Explosões (Símbolo ATEX)</td>
+        <td>Identifica que o equipamento tem proteção adequada para uso em atmosferas explosivas.</td>
+    </tr>
+    <tr>
+        <td>Grupo de Equipamentos</td>
+        <td>Divide os equipamentos conforme o local de uso: Grupo I para minas, Grupo II para indústrias acima do solo, e Grupo III para poeiras ou partículas.</td>
+    </tr>
+    <tr>
+        <td>Categoria de Equipamentos</td>
+        <td>Classifica o equipamento conforme a zona de risco: Categoria 1 para Zonas 0 ou 20, Categoria 2 para Zonas 1 ou 21, e Categoria 3 para Zonas 2 ou 22.</td>
+    </tr>
+    <tr>
+        <td>Ambiente</td>
+        <td>Indica se o ambiente contém gases (G) ou poeira (D).</td>
+    </tr>
+    <tr>
+        <td>Tipo de Proteção</td>
+        <td>Descreve o método usado para prevenir a ignição em ambientes perigosos, como encapsulamento ou pressurização.</td>
+    </tr>
+    <tr>
+        <td>Subgrupos de Gases e Poeiras</td>
+        <td>Detalha subgrupos específicos para diferentes gases e poeiras, indicando a especificidade da proteção.</td>
+    </tr>
+    <tr>
+        <td>Classificação de Temperatura</td>
+        <td>Mostra a temperatura máxima de superfície que o equipamento pode atingir, crucial para prevenir ignição de materiais inflamáveis próximos.</td>
+    </tr>
+    <tr>
+        <td>Nível de Proteção do Equipamento (EPL)</td>
+        <td>Indica o nível de proteção oferecido pelo equipamento, adequado para a zona específica de uso.</td>
+    </tr>
+</table>
+
+<h3>Digite os códigos de seu equipamento aqui e descubra que tipo de proteção ele oferece</h3>
+    <select id="input1">
+        <option value="I">I</option>
+        <option value="II">II</option>
+    </select>
+    <select id="input2">
+        <option value="M1">M1</option>
+        <option value="M2">M2</option>
+        <option value="1G">1G</option>
+        <option value="2G">2G</option>
+        <option value="3G">3G</option>
+        <option value="1D">1D</option>
+        <option value="2D">2D</option>
+        <option value="3D">3D</option>
+    </select>
+    <select id="input3">
+        <option value="d">d</option>
+        <option value="e">e</option>
+        <option value="ia">ia</option>
+        <option value="ib">ib</option>
+        <option value="ic">ic</option>
+        <option value="ma">ma</option>
+        <option value="mb">mb</option>
+        <option value="mc">mc</option>
+        <option value="o">o</option>
+        <option value="q">q</option>
+        <option value="nA">nA</option>
+        <option value="nC">nC</option>
+        <option value="nR">nR</option>
+        <option value="nL">nL</option>
+        <option value="px">px</option>
+        <option value="py">py</option>
+        <option value="pz">pz</option>
+        <option value="Op is">Op is</option>
+        <option value="Op pr">Op pr</option>
+        <option value="Op sh">Op sh</option>
+        <option value="ta">ta</option>
+        <option value="tb">tb</option>
+        <option value="tc">tc</option>
+        <option value="maD">maD</option>
+        <option value="mbD">mbD</option>
+        <option value="mcD">mcD</option>
+        <option value="iaD">iaD</option>
+        <option value="ibD">ibD</option>
+        <option value="icD">icD</option>
+        <option value="pD">pD</option>
+    </select>
+    <select id="input4">
+        <option value="I">I</option>
+        <option value="IIA">IIA</option>
+        <option value="IIB">IIB</option>
+        <option value="IIC">IIC</option>
+        <option value="IIIA">IIIA</option>
+        <option value="IIIB">IIIB</option>
+        <option value="IIIC">IIIC</option>
+    </select>
+    <input type="text" id="input5" placeholder="Digite T1 a T6 ou T(valor escrito)ºC">
+    <select id="input6">
+        <option value="Ga">Ga</option>
+        <option value="Gb">Gb</option>
+        <option value="Gc">Gc</option>
+        <option value="Da">Da</option>
+        <option value="Db">Db</option>
+        <option value="Dc">Dc</option>
+        <option value="Ma">Ma</option>
+        <option value="Mb">Mb</option>
+    </select>
+    <button onclick="generateCards()">Enter</button>
+
+    <div id="cardsContainer"></div>
+
+    <footer>
+        <p>© 2024 Grunn do Brasil. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function generateCards() {
+            const field1 = document.getElementById('input1').value;
+            const field2 = document.getElementById('input2').value;
+            const field3 = document.getElementById('input3').value;
+            const field4 = document.getElementById('input4').value;
+            const field5 = document.getElementById('input5').value;
+            const field6 = document.getElementById('input6').value;
+            const cardsContainer = document.getElementById('cardsContainer');
+            cardsContainer.innerHTML = ''; // Clear previous cards
+
+            const cardTexts = [
+                '<span class="bold">Grupo de Equipamento</span><br>' + (field1 === 'I' ? 'Mineração' : 'Outras Indústrias'),
+                '<span class="bold">Categoria do Equipamento</span><br>' + mapField2ToText(field2),
+                '<span class="bold">Tipo de proteção</span><br>' + mapField3ToText(field3),
+                '<span class="bold">Grupo e Classe do Equipamento</span><br>' + mapField4ToText(field4),
+                '<span class="bold">Classe de Temperatura</span><br>' + mapField5ToText(field5),
+                '<span class="bold">Nível de Proteção do Equipamento</span><br>' + mapField6ToText(field6)
+            ];
+
+            cardTexts.forEach((text, index) => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = text;
+                cardsContainer.appendChild(card);
+            });
+        }
+
+        function mapField2ToText(value) {
+            switch(value) {
+                case 'M1':
+                    return 'Desempenho exigido em caso de atmosfera explosiva: permanecer funcional, Nível de proteção: Muito alto, duas falhas, Gás ou Dust (poeira)';
+                case 'M2':
+                    return 'Desempenho exigido em caso de atmosfera explosiva: desenergizado, Nível de proteção: Alto, Operação normal, Gás ou Dust (poeira)';
+                case '1G':
+                    return 'Expectativa de ocorrência de uma atmosfera explosiva: Continuamente, por longos períodos ou frequentemente, Nível de proteção: Muito alto, duas falhas, Gás, Zona 0';
+                case '2G':
+                    return 'Expectativa de ocorrência de uma atmosfera explosiva: Ocasionalmente, Nível de proteção: Alto, uma falha, Gás, Zona 1';
+                case '3G':
+                    return 'Expectativa de ocorrência de uma atmosfera explosiva: Improvável ou raramente e por um curto período, Nível de proteção: Normal, operação normal, Gás, Zona 2';
+                case '1D':
+                    return 'Expectativa de ocorrência de uma atmosfera explosiva: Continuamente, por longos períodos ou frequentemente, Nível de proteção: Muito alto, duas falhas, Dust (Poeira), Zona 20 <a href="https://grunn.com.br/sintrol-medidores-de-poeira/dumopro/" target="_blank">Saiba mais como se proteger com o Dumo</a>';
+                case '2D':
+                    return 'Expectativa de ocorrência de uma atmosfera explosiva: Ocasionalmente, Nível de proteção: Alto, uma falha, Dust (Poeira), Zona 21 <a href="https://grunn.com.br/sintrol-medidores-de-poeira/dumopro/" target="_blank">Saiba mais como se proteger com o Dumo</a>';
+                case '3D':
+                    return 'Expectativa de ocorrência de uma atmosfera explosiva: Improvável ou raramente e por um curto período, Nível de proteção: Normal, operação normal, Dust (Poeira), Zona 22 <a href="https://grunn.com.br/sintrol-medidores-de-poeira/dumopro/" target="_blank">Saiba mais como se proteger com o Dumo</a>';
+                default:
+                    return 'Por favor, selecione uma opção válida';
+            }
+        }
+
+        function mapField3ToText(value) {
+            const protectionTypes = {
+                'd': 'Tipo de proteção: Invólucro aprova de chamas, Zonas 1 e 2',
+                'e': 'Tipo de proteção: Maior segurança, Zonas 1 e 2',
+                'ia': 'Tipo de proteção: segurança intrínseca, Zonas 0, 1 e 2',
+                'ib': 'Tipo de proteção: segurança intrínseca, Zonas 1 e 2',
+                'ic': 'Tipo de proteção: segurança intrínseca, Zonas 2',
+                'ma': 'Tipo de proteção: Modagem, Zonas 0, 1 e 2',
+                'mb': 'Tipo de proteção: Modagem, Zonas 1 e 2',
+                'mc': 'Tipo de proteção: Modagem, Zonas 2',
+                'o': 'Tipo de proteção: Imersão em óleo, Zonas 1 e 2',
+                'q': 'Tipo de proteção: Enchimento de poeira, Zonas 1 e 2',
+                'nA': 'Tipo de proteção: Não gera faíscas, Zona 2',
+                'nC': 'Tipo de proteção: Dispositivo de parada enclausurada, Zona 2',
+                'nR': 'Tipo de proteção: Restrito, Zona 2',
+                'nL': 'Tipo de proteção: Energia limitada, Zona 2',
+                'px': 'Tipo de proteção: Invólucro pressurizado, Zonas 1 e 2',
+                'py': 'Tipo de proteção: Invólucro pressurizado, Zonas 1 e 2',
+                'pz': 'Tipo de proteção: Invólucro pressurizado, Zona 2',
+                'Op is': 'Tipo de proteção: Radiação óptica, Zonas 0, 1 e 2',
+                'Op pr': 'Tipo de proteção: Radiação óptica, Zonas 1 e 2',
+                'Op sh': 'Tipo de proteção: Radiação óptica, Zonas 1 e 2',
+                'ta': 'Tipo de proteção: Proteção por invólucro, Zonas 20, 21 e 22',
+                'tb': 'Tipo de proteção: Proteção por invólucro, Zonas 21 e 22',
+                'tc': 'Tipo de proteção: Proteção por invólucro, Zona 22',
+                'maD': 'Tipo de proteção: Encapsulamento, Zonas 20, 21 e 22',
+                'mbD': 'Tipo de proteção: Encapsulamento, Zonas 21 e 22',
+                'mcD': 'Tipo de proteção: Encapsulamento, Zona 22',
+                'iaD': 'Tipo de proteção: Segurança intrínseca, Zonas 20, 21 e 22',
+                'ibD': 'Tipo de proteção: Segurança intrínseca, Zonas 21 e 22',
+                'icD': 'Tipo de proteção: Segurança intrínseca, Zona 22',
+                'pD': 'Tipo de proteção: Invólucro pressurizado, Zona 22'
+            };
+            return protectionTypes[value] || 'Por favor, selecione uma opção válida';
+        }
+            function mapField4ToText(value) {
+            switch(value) {
+                case 'I': return 'Temperaturas de acordo com o acúmulo de poeira de carvão nos equipamentos  (< 150°C para minas de carvão ou < 450°C para outros túneis )';
+                case 'IIA': return 'Gases explosivos ex: Amônia, Gasolina e Diesel';
+                case 'IIB': return 'Gases explosivos ex: Gas encanado, etileno e Éter etílico';
+                case 'IIC': return 'Gases explosivos ex: Hidrogênio, Acetileno e Dissulfureto de Carbono';
+                case 'IIIA': return 'Poeiras inflamáveis';
+                case 'IIIB': return 'Poeira não-condutiva';
+                case 'IIIC': return 'Poeira condutiva';
+                default: return 'Por favor, selecione uma opção válida';
+            }
+        }
+
+        function mapField5ToText(value) {
+            switch(value) {
+                case 'T1': return 'Temperatura < 450ºC';
+                case 'T2': return 'Temperatura < 300ºC';
+                case 'T3': return 'Temperatura < 200ºC';
+                case 'T4': return 'Temperatura < 135ºC';
+                case 'T5': return 'Temperatura < 100ºC';
+                case 'T6': return 'Temperatura < 80ºC';
+                default: return 'Para prova de explosão de poeira, o máx. a temperatura da superfície é mostrada diretamente (neste caso é o valor escrito antes do símbolo °C)';
+            }
+        }
+
+        function mapField6ToText(value) {
+            switch(value) {
+                case 'Ga': return 'Classificação de zona: 0, 1 ou 2, Categoria de equipamento: 1G, 2G ou 3G, respectivamente';
+                case 'Gb': return 'Classificação de zona: 1 ou 2, Categoria de equipamento: 2G ou 3G, respectivamente';
+                case 'Gc': return 'Classificação de zona: 2, Categoria de equipamento: 3G, respectivamente';
+                case 'Da': return 'Classificação de zona: 20, 21 ou 22, Categoria de equipamento: 1D, 2D ou 3D, respectivamente';
+                case 'Db': return 'Classificação de zona: 21 ou 22, Categoria de equipamento: 2D ou 3D, respectivamente';
+                case 'Dc': return 'Classificação de zona: 22, Categoria de equipamento: 3D, respectivamente';
+                case 'Ma': return 'Categoria de equipamento: M1';
+                case 'Mb': return 'Categoria de equipamento: M2';
+                default: return 'Por favor, selecione uma opção válida';
+            }
+        }
+    </script>
+</body>
+</html>
